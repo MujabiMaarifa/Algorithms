@@ -49,13 +49,21 @@ void printArr(int arr[], int size) {
 }
 
 int main() {
-    int arr[] = {10, 7, 8, 9, 1, 5};
+    int arr[] = {8,3,6,2,5};
+    int arr2[] = {20,8,14,30,11,6};
     int n = sizeof(arr) / sizeof(arr[0]);
+    int n1 = sizeof(arr2) / sizeof(arr2[0]);
     printf("Unsorted array\n");
     printArr(arr, n);
+    
 
     quickSort(arr, 0, n-1);
     printf("Sorted array\n");
     printArr(arr, n);
+    printf("-------------------------------------\n");
+    printArr(arr2, n1);
+    printf("Sorted second array\n");
+    quickSort(arr2, 0, n1-1);
+    printArr(arr2, n1);
     return 0;
 }
