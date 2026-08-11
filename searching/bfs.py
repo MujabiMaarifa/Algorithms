@@ -1,4 +1,7 @@
 #implementing bfs in python
+#bfs  - is a level order tree traversal
+#time compelexity - worstCase O(|v|+|E|)
+#a queue is used to keep track of the nodes in the graph
 
 graph = {
         'A' : ['B', 'C'],
